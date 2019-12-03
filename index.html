@@ -17,7 +17,7 @@
 			<a class="main-header__logo">
 				<picture>
 					<source media="(min-width: 768px)" srcset="img/main-desktop-logo.png">
-					<img class="page-header__logo-image" src="img/main-mobile-logo.png" width="190" height="42" alt="Elegant logo">
+					<img class="page-header__logo-image" src="img/main-mobile-logo.png" width="160" alt="Elegant logo">
 				</picture>
 			</a>
 			<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -33,7 +33,7 @@
 
 		<div class="promo-block">
 			<p class="promo-block__slogan">Say Haloa to your Portfolio</p>
-			<a class="promo-block__link" href="#"><img src="img/arrow-down.png"></a>
+			<a class="promo-block__link" href="#"><img src="img/arrow-down.png" width="25" height="25"></a>
 		</div>
 	</header>
 
@@ -112,9 +112,9 @@
 						<img src="img/Tobias-mobile.jpg" alt="Tobias">
 					</picture>
 					<h3 class="staff__position">Ceo</h3>
-					<dl>
-						<dt>Tobias Schneider</dt>
-						<dd>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt.</dd>
+					<dl class="staff-personal__list">
+						<dt class="staff-personal__name">Tobias Schneider</dt>
+						<dd class="staff-personal__description">Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt.</dd>
 					</dl>
 				</li>
 				<li class="staff-list__item">
@@ -123,9 +123,9 @@
 						<img src="img/Jack-mobile.jpg" alt="Jack">
 					</picture>
 					<h3 class="staff__position">Designer</h3>
-					<dl>
-						<dt>Jack Knife</dt>
-						<dd>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt.</dd>
+					<dl class="staff-personal__list">
+						<dt class="staff-personal__name">Jack Knife</dt>
+						<dd class="staff-personal__description">Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt.</dd>
 					</dl>
 				</li>
 				<li class="staff-list__item">
@@ -134,9 +134,9 @@
 						<img src="img/Ricki-mobile.jpg" alt="Ricki">
 					</picture>
 					<h3 class="staff__position">Developer</h3>
-					<dl>
-						<dt>Ricki Hall</dt>
-						<dd>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt.</dd>
+					<dl class="staff-personal__list">
+						<dt class="staff-personal__name">Ricki Hall</dt>
+						<dd class="staff-personal__description">Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt.</dd>
 					</dl>
 				</li>
 			</ul>
@@ -150,14 +150,14 @@
 						<source media="(min-width: 768px)" srcset="img/index-post-desktop.jpg">
 						<img class="our-work__img" src="img/index-post-mobile.jpg">
 					</picture>
+					<div class="blog-info">
+						<time datetime="2019-09-14">14 september 2019</time>
+						<b class="blog-info__head">Change Your Space</b>
+						<p class="blog-info__description">Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores.</p>
+						<a class="blog-read__btn blog-btn" href="#">Read</a>
+					</div>
 				</div>
-				<div class="blog-info__text">
-					<time datetime="2019-09-14">14 september 2019</time>
-					<b class="blog-info__head">Change your space</b>
-					<p class="blog-info__description">Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores.</p>
-					<a class="blog-info__button" href="#">Read</a>
-				</div>
-				<a class="blog__btn" href="#">More from our blog</a>
+				<a class="blog-more__btn blog-btn" href="#">More from our blog</a>
 		</section>
 
 		<section class="contacts">
@@ -177,16 +177,23 @@
 					</li>
 					<li class="contacts-list__item">
 						<b class="contacts-list__item--head">Phone</b>
-						<p class="contacts-list__item--description">+88 (0) 101 0000 000<br>+88 (0) 101 0000 000</p>	
+						<p class="contacts-list__item--description">
+							<a href="tel:+88 (0) 101 0000 000">+88 (0) 101 0000 000</a><br>
+							<a href="tel:+88 (0) 101 0000 000">+88 (0) 101 0000 000</a>
+						</p>	
 					</li>
 					<li class="contacts-list__item">
 						<b class="contacts-list__item--head">Fax</b>
-						<p class="contacts-list__item--description">+88 (0) 202 0000 000<br>+88 (0) 202 0000 000</p>	
+						<p class="contacts-list__item--description">
+							<a href="fax:+88 (0) 202 0000 000">+88 (0) 202 0000 000</a><br>
+							<a href="fax:+88 (0) 202 0000 000">+88 (0) 202 0000 000</a></p>	
 					</li>
 					<li class="contacts-list__item">
 						<b class="contacts-list__item--head">Email</b>
-						<p class="contacts-list__item--description">e@elegant.com<br>
-						c@elegant.com</p>	
+						<p class="contacts-list__item--description">
+							<a href="mailto:e@elegant.com">e@elegant.com</a><br>
+							<a href="mailto:c@elegant.com">c@elegant.com</a>
+						</p>	
 					</li>
 				</ul>
 			</div>
