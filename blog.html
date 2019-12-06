@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Elegant-blog</title>
+	<link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font">
+	<link rel="preload" href="fonts/OpenSans-Light.woff2" as="font">
+	<link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header class="main-header inner-page__header">
+		<div class="main-header__wrapper">
+		<nav class="main-nav main-nav--closed">
+			<a class="main-header__logo">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/main-desktop-logo.png">
+					<img class="page-header__logo-image" src="img/main-mobile-logo.png" width="160" alt="Elegant logo">
+				</picture>
+			</a>
+			<button class="main-nav__toggle" type="button"><span class="visually-hidden">Open menu</span></button>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item"><a href="index.html">Main</a></li>
+					<li class="site-list__item"><a href="project.html">Project</a></li>
+					<li class="site-list__item site-list__item--active"><a>Blog</a></li>
+					<li class="site-list__item"><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		</div>
+
+		<div class="inner-page__background"></div>	
+	</header>
+
+	<main class="blog-page__main">
+		<div class="blog-page__container">
+		<h1 class="visually-hidden">Our posts</h1>
+		<section class="blog-page__posts">
+			<h2 class="visually-hidden">Posts list</h2>
+			<div class="blog-page__record">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/blog-photo-desktop.jpg">
+					<img src="img/blog-photo-mob.jpg" alt="blog photo">
+				</picture>	
+				<h3 class="record__title">This is the Title of Your Post</h3>
+				<time datetime="2019-09-14">14 september 2019</time>
+				<p class="record__description">This looks. I want to complexity. That's come to testify to complexity. It's about an object, we kept going and i figured out some basic stuff that acknowledges its very minimalist way beyond the traditions of function from a clutterfree product that form and value on ideas and simplicity. What products have disconnected function of anything of the computer.</p>
+				<a class="record__link" href="#">Read more</a>
+			</div>
+			<div class="blog-page__record">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/blog-photo2-desktop.jpg">
+					<img src="img/blog-photo2-mob.jpg" alt="blog photo">
+				</picture>	
+				<h3 class="record__title">This is the Title of Your Post</h3>
+				<time datetime="2019-09-14">14 september 2019</time>
+				<p class="record__description">This looks. I want to complexity. That's come to testify to complexity. It's about an object, we kept going and i figured out some basic stuff that acknowledges its very minimalist way beyond the traditions of function from a clutterfree product that form and value on ideas and simplicity. What products have disconnected function of anything of the computer.</p>
+				<a class="record__link" href="#">Read more</a>
+			</div>
+		</section>
+
+		<section class="blog-page__filter">
+			<h2 class="visually-hidden">Filter list</h2>
+			<div class="filter__categories">
+				<h3 class="filter__caption">Recent posts</h3>
+				<ul class="recent-posts__list">
+					<li class="recent-posts__item">This is the Title of Your Post</li>
+					<li class="recent-posts__item">This is the Title of Your Post</li>
+					<li class="recent-posts__item">This is the Title of Your Post</li>
+					<li class="recent-posts__item">This is the Title of Your Post</li>
+				</ul>
+			</div>
+			<div class="filter__categories">
+				<h3 class="filter__caption">Categories</h3>
+				<ul class="recent-posts__list">
+					<li class="recent-posts__item">Art</li>
+					<li class="recent-posts__item">Business</li>
+					<li class="recent-posts__item">Design</li>
+					<li class="recent-posts__item">Code</li>
+				</ul>
+			</div>
+			<div class="filter__categories">
+				<h3 class="filter__caption">Projects</h3>
+				<ul class="recent-posts__list">
+					<li class="recent-posts__item">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/work-2-desktop.jpg">
+							<img src="img/work-2-mobile.jpg" alt="project photo">
+						</picture>
+					</li>
+					<li class="recent-posts__item">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/work-3-desktop.jpg">
+							<img src="img/work-3-mobile.jpg" alt="project photo">
+						</picture>
+					</li>
+					<li class="recent-posts__item">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/work-4-desktop.jpg">
+							<img src="img/work-4-mobile.jpg" alt="project photo">
+						</picture>
+					</li>
+					<li class="recent-posts__item">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/work-5-desktop.jpg">
+							<img src="img/work-5-mobile.jpg" alt="project photo">
+						</picture>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<div class="posts-link__wrapper">
+			<a class="more-posts-link" href="#">Load more posts</a>
+		</div>
+	</div>
+	</main>
+
+	<footer class="main-footer">
+		<div class="page-container">
+			<p class="copyright-info">Designed and Developed by Diogo Dantas<br>
+			Сверстано: &lsaquo;SТ&rsaquo;</p>
+		</div>
+	</footer>
+	
+	<script src="script.js"></script>
+</body>
+</html>
