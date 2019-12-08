@@ -417,6 +417,8 @@ img {
         margin-top: -68px; 
 
         background-image: url(img/background-desktop.jpg);
+        background-size: cover;
+        background-position: center;
     }
 
     .promo-block__slogan {
@@ -1049,6 +1051,7 @@ img {
     .promo-block--progect-page {
         background-image: url(img/background-desktop-project.jpg);
         background-size: cover;
+        background-position: center;
     }
 
     .project__title {
@@ -1150,7 +1153,7 @@ img {
 .blog-page__record time {
     font-size: 16px;
     line-height: 24px;
-    font-weight: 300px;
+    font-weight: 300;
 
     color: #d3b000;
 }
@@ -1328,9 +1331,18 @@ img {
         line-height: 36px;
     }
 
+    .recent-posts__item img {
+        width: 100%;
+    }
+
     .posts-link__wrapper {
         padding-bottom: 50px;
         margin: 0 30px 100px;
+    }
+
+    .more-posts-link {
+        font-size: 26px;
+        line-height: 40px;
     }
 }
 
@@ -1344,6 +1356,7 @@ img {
 
         background-image: url(img/blog-bg-desktop.jpg);
         background-size: cover;
+        background-position: center;
     }
 
     .blog-page__container {
@@ -1352,7 +1365,7 @@ img {
 
         display: flex;
         justify-content: space-around;
-        flex-wrap: 
+        flex-wrap: wrap;
 
         background-color: #f9f9f9;
     }
@@ -1366,105 +1379,127 @@ img {
     }
 
     .blog-page__record {
+        margin-bottom: 55px;
         padding: 35px;
 
         background-color: #fff;
     }
 
-.record__title {
-    margin: 20px 0;
+    .record__title {
+        margin: 30px 0;
 
-    font-size: 32px;
-    line-height: 42px;
-    font-weight: 300;
-}
+        font-size: 30px;
+        line-height: 40px;   
+    }
 
-.blog-page__record {
-    margin-bottom: 60px;
-}
+    .record__link {
+        font-size: 16px;
+        line-height: 32px;
+    }
 
-.blog-page__record img {
-    width: 100%;
-}
+    .blog-page__record time {
+        font-size: 15px;
+        line-height: 24px;   
+    }
 
-.blog-page__record time {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 300px;
+    .record__description {
+        margin-bottom: 50px;
 
-    color: #d3b000;
-}
-
-.record__description {
-    margin-bottom: 30px;
-
-    font-size: 14px;
-    line-height: 22px;
-}
-
-.record__link {
-    display: block;
-
-    width: 30%;
-    padding: 15px 30px;
-
-    text-align: center;
-    font-weight: 300;
-
-    color: #021725;
-
-    text-decoration: none;
-    border: 1px solid #021725;  
-}
+        font-size: 16px;
+        line-height: 25px;
+    }
 
     .blog-page__filter {
         flex-basis: 26%;
 
         margin: 0;
         padding: 0;
+        padding-top: 45px;
     }
 
-.filter__caption {
+    .recent-posts__item {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .posts-link__wrapper {
+        flex-basis: 100%;
+    }
+}
+
+/*contact*/
+
+.contact__section {
+    margin: 0 10px;
+    margin-bottom: 50px;
+
+    text-align: center;
+}
+
+.contact__slogan {
+    margin-bottom: 70px;
+}
+
+.contact__address {
+    background-color: #d3b000;
+    color: #fff;
+}
+
+.contact__data {
     position: relative;
 
-    margin: 0;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    padding: 60px 0 40px 10px;
+    
+    text-align: left;
 
-    font-size:24px;
-    line-height: 32px; 
-    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
 }
 
-.filter__caption::before {
+.contact__data::before {
     position: absolute;
-    content: "";
+    top: 30px;
+    left: 10px;
 
-    top: 40px;
-    left: 0;
+    content: '';
 
-    width: 100%;
+    width: 25px;
     height: 3px;
 
-    background-color: #d3b000;
+    background-color: #fff;
 }
 
-.recent-posts__list {
-    margin: 0;
-    margin-bottom: 30px;
-    padding: 0;
+.contact__img {
+    min-height: 370px;
 
-    list-style: none;
+    background-image: url(img/contact-city-img-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.recent-posts__item {
-    font-size: 12px;
-    line-height: 18px;
+.contact__description {
+    padding: 30px;
+
+    text-align: left;
+
     font-weight: 300;
-    font-style: italic;
+    font-size: 16px;
+    line-height: 22px;
 }
 
-.more-posts-link {
+.contact__phone {
+    margin-bottom: 50px;
+
+    background-color: #212121;
+}
+
+.contact__phone a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact__send-email {
     display: block;
 
     width: 50%;
@@ -1480,7 +1515,117 @@ img {
     border: 1px solid #021725;  
 }
 
-    .posts-link__wrapper {
-        flex-basis: 100%;
+.contact__send-email:hover,
+.contact__send-email:focus {
+    background-color: #242f35;
+    color: #d4af37;
+}
+
+.contact__send-email:active {
+    color: rgba(212, 175, 55, 0.3);
+}
+
+@media (min-width: 700px) {
+    .contact__section {
+        margin: 0 30px;
+        margin-bottom: 140px;
+    }
+    
+    .contact__slogan {
+        margin-bottom: 130px;
+    }
+
+    .contact__data {
+        padding: 100px 50px;
+
+        font-size: 46px;
+        line-height: 59px;
+    }
+
+    .contact__data::before {
+        top: 50px;
+        left: 50px;
+    }
+
+    .contact__description {
+        padding: 60px 70px;
+
+        font-size: 30px;
+        line-height: 47px;
+
+        background-color: #fcfcfc;
+    }
+
+    .contact__send-email {
+        font-size: 27px;
+        line-height: 60px;
+    }
+
+    .contact__phone {
+        margin-bottom: 140px;
     }
 }
+
+@media (min-width: 1200px) {
+    .inner-page__background--contact-page {
+        margin-top: -67px;
+        min-height: 374px;
+
+        background-image: url(img/contact-bg-desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .contact__section {
+        margin: 0;
+        margin-bottom: 70px;
+    }
+
+    .contact-list__wrapper {
+        display: flex; 
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        margin-bottom: 70px;
+    }
+
+    .contact__data {
+        flex-basis: 40%;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-sizing: border-box;
+
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .contact__data::before {
+        top: 30px;
+        left: 30px;
+    }
+
+    .contact__img {
+        flex-basis: 60%;
+        background-image: url(img/contact-city-img-desktop.jpg);
+    }
+
+    .contact__phone {
+        margin-bottom: 0;
+    }
+
+    .contact__description {
+        flex-basis: 60%;
+        padding: 45px;
+        box-sizing: border-box;
+
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .contact__send-email {
+        font-size: 14px;
+        line-height: 32px;
+    }
+}
+
